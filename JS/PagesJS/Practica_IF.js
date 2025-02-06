@@ -71,9 +71,9 @@ function calcularDescuento() {
     console.log(descuento)
     
     if (monto >= 100) {
-        document.getElementById('nota').innerText = `descuento del 10%`;
+        document.getElementById('monto').innerText = `descuento del 10%`;
     } else {
-        document.getElementById('nota').innerText = `sin descuento`;
+        document.getElementById('monto').innerText = `sin descuento`;
     }
 }
 
@@ -85,6 +85,7 @@ function verificarMayorMenor() {
 
     if (edad >= 18) {
 
+        document.getElementById('edadSimple').innerText = `Eres mayor de edad`
         alert(`Eres mayor de edad`)
     } else {
         

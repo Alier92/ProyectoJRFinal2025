@@ -109,3 +109,33 @@ function personasActivas() {
 
     });
 }
+
+//caso 3
+function primeraMayorDeEdad() {
+  let resultado = document.getElementById('resultadoMayor');
+
+  let mayor = personas.find( personas => personas.edad >= 18)
+      
+  if (mayor) {
+    
+    resultado.innerText = `primera persona mayor de edad  ${mayor.nombre}`
+
+  } else {
+    resultado.innerText = `No se encontro nadie mayor de edad `
+  }
+
+}
+
+//caso 5
+function mayoresDeEdad() {
+  let resultado = document.getElementById('listaMayores');
+  let mayores = personas.filter (personas => personas.edad >= 18)
+
+  if (mayores) {
+
+    resultado.innerText = `${mayores.nombre}` 
+     
+  } else {
+      resultado.innerText = `No se encontro nadie mayor de edad `
+  }
+}

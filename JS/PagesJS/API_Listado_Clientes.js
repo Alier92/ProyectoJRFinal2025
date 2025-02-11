@@ -28,12 +28,33 @@ function consultarDatos() {
             // custom error
             console.log(result)
             DatosFiltrados = result
+            Mostrar_CampoTabla()
         })
         .catch(error => {      ///4- Catch
             // common error
             alert("Error ",error)
-            return null;
+            return null;S
         });
     
+}
+
+function Mostrar_CampoTabla() {
+    
+    let html = ""
+
+    DatosFiltrados.forEach(element => {
+        
+        console.log(element)
+        
+        html += `
+            <tr>
+                <td>${element.id}</td>
+                <td>${element.name} </td>
+                <td>${element.email}</td>
+            </tr>
+        `
+
+    });
+    contenedor.innerHTML = html
 }
   

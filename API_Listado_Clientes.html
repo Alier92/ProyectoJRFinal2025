@@ -23,6 +23,7 @@
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
@@ -44,11 +45,12 @@
 
         <!-- Inicio: Main  -->
         <main class="mt-5">
+        
             <div class="container  ">
                 <div class="col-md-12">
                     <h2 class="text-center mt-4">Tabla de Datos</h2>
                     <div class="table-responsive">
-                        <table class="table table-bordered table-striped text-center">
+                        <table class="table table-bordered table-striped text-center " id="ttabla">
                             <thead class="thead-dark">
                                 <tr>
                                     <th>Nombre</th>
@@ -67,6 +69,30 @@
                                     <td>bla bla bla </td>
                                     <td>imagen.jpg</td>
                                 </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container  ">
+                <div class="col-md-12">
+                    <h2 class="text-center mt-4">Tabla API RICK </h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped text-center " id="ttabla">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Imagen</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody2">
+                                <tr>
+                                    <td>Juan Pérez</td>
+                                    <td></td>
+                                  
+                                </tr>
+                              
                             </tbody>
                         </table>
                     </div>
@@ -93,7 +119,7 @@
     <script type="module" src="JS/General/Header.js"></script>
    
    <!-- Scripts de la Pagina   -->
-    <script  src="JS/PagesJS/API_Listado_Clientes.js"></script>
+    <script type="module" src="JS/PagesJS/API_Listado_Clientes.js"></script>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
